@@ -1,251 +1,258 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-        crossorigin="anonymous">
-    <style>
-        html,
-        body {
-            height: 100%;
-            min-width: 320px;
-        }
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+		crossorigin="anonymous">
+	<style>
+		html,
+		body {
+			height: 100%;
+			min-width: 320px;
+		}
 
-        body {
-            color: #ccc;
-        }
+		body {
+			color: #ccc;
+		}
 
-        .hidden {
-            display: none;
-        }
+		.hidden {
+			display: none;
+		}
 
-        .footer {
-            padding: 20px 0;
-            font-size: 10px;
-        }
+		.footer {
+			padding: 20px 0;
+			font-size: 10px;
+		}
 
-        .btn {
-            font-size: 16px;
-            text-transform: uppercase;
-            border-radius: 0;
-            font-family: 'Roboto', sans-serif !important;
-            font-weight: bold !important;
-            word-break: break-word !important;
-        }
+		.btn {
+			font-size: 16px;
+			text-transform: uppercase;
+			border-radius: 0;
+			font-family: 'Roboto', sans-serif !important;
+			font-weight: bold !important;
+			word-break: break-word !important;
+		}
 
-        .btn-dl {
-            color: #5dc390 !important;
-            background: #fff !important;
-            border: 2px solid #5dc390 !important;
-        }
+		.btn-dl {
+			color: #5dc390 !important;
+			background: #fff !important;
+			border: 2px solid #5dc390 !important;
+		}
 
-        .form-control {
-            border-radius: 0;
-        }
+		.form-control {
+			border-radius: 0;
+		}
 
-        #convert-btn,
-        #link {
-            background-color: #28c979;
-            border-color: #28c979;
-            border-radius: 22px;
-            color: #fff;
-        }
+		#convert-btn,
+		#link {
+			background-color: #28c979;
+			border-color: #28c979;
+			border-radius: 22px;
+			color: #fff;
+		}
 
-        .button-link {
-            background-color: #28c979;
-            border-color: #28c979;
-            border-radius: 22px;
-            color: #fff;
-        }
+		.button-link {
+			background-color: #28c979;
+			border-color: #28c979;
+			border-radius: 22px;
+			color: #fff;
+		}
 
-        #inputUrl {
-            margin-bottom: 20px;
-        }
+		#inputUrl {
+			margin-bottom: 20px;
+		}
 
-        #convert-form {
-            width: 100%;
-        }
+		#convert-form {
+			width: 100%;
+		}
 
-        .title {
-            font-weight: bold;
-            font-size: 30px;
-            color: #000;
-        }
+		.title {
+			font-weight: bold;
+			font-size: 30px;
+			color: #000;
+		}
 
-        .description {
-            margin-bottom: 20px;
-        }
+		.description {
+			margin-bottom: 20px;
+		}
 
-        .header {
-            padding: 8px 0;
-            color: #fff;
-            background-color: #32afed;
-        }
+		.header {
+			padding: 8px 0;
+			color: #fff;
+			background-color: #32afed;
+		}
 
-        .user_photo {
-            border-radius: 80px;
-            width: 160px;
-            height: 160px;
-        }
+		.user_photo {
+			border-radius: 80px;
+			width: 160px;
+			height: 160px;
+		}
 
-        .tgme_page_description {
-            color: #2b2d2e;
-        }
+		.tgme_page_description {
+			color: #2b2d2e;
+		}
 
-        .tgme_page_description a {
-            color: #3ca2d9;
-        }
+		.tgme_page_description a {
+			color: #3ca2d9;
+		}
 
-        #main {
-            font-size: 1rem;
-            height: 100%;
-        }
+		#main {
+			font-size: 1rem;
+			height: 100%;
+		}
 
-        .round {
-            border-radius: 100px;
-            /* Радиус скругления */
-            /* border: 3px solid gray; */
-            /* Параметры рамки */
-            box-shadow: 0 0 7px #666;
-            /* Параметры тени */
-        }
+		.round {
+			border-radius: 100px;
+			/* Радиус скругления */
+			/* border: 3px solid gray; */
+			/* Параметры рамки */
+			box-shadow: 0 0 7px #666;
+			/* Параметры тени */
+		}
 
 
-        .preloader {
-            /*фиксированное позиционирование*/
-            position: fixed;
-            /* координаты положения */
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            /* фоновый цвет элемента */
-            background: #e0e0e0;
-            /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-            z-index: 1001;
-        }
+		.preloader {
+			/*фиксированное позиционирование*/
+			position: fixed;
+			/* координаты положения */
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			/* фоновый цвет элемента */
+			background: #e0e0e0;
+			/* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+			z-index: 1001;
+		}
 
-        .preloader__row {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            width: 70px;
-            height: 70px;
-            margin-top: -35px;
-            margin-left: -35px;
-            text-align: center;
-            animation: preloader-rotate 2s infinite linear;
-        }
+		.preloader__row {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			width: 70px;
+			height: 70px;
+			margin-top: -35px;
+			margin-left: -35px;
+			text-align: center;
+			animation: preloader-rotate 2s infinite linear;
+		}
 
-        .preloader__item {
-            position: absolute;
-            display: inline-block;
-            top: 0;
-            background-color: #337ab7;
-            border-radius: 100%;
-            width: 35px;
-            height: 35px;
-            animation: preloader-bounce 2s infinite ease-in-out;
-        }
+		.preloader__item {
+			position: absolute;
+			display: inline-block;
+			top: 0;
+			background-color: #337ab7;
+			border-radius: 100%;
+			width: 35px;
+			height: 35px;
+			animation: preloader-bounce 2s infinite ease-in-out;
+		}
 
-        .preloader__item:last-child {
-            top: auto;
-            bottom: 0;
-            animation-delay: -1s;
-        }
+		.preloader__item:last-child {
+			top: auto;
+			bottom: 0;
+			animation-delay: -1s;
+		}
 
-        @keyframes preloader-rotate {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
+		@keyframes preloader-rotate {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
 
-        @keyframes preloader-bounce {
+		@keyframes preloader-bounce {
 
-            0%,
-            100% {
-                transform: scale(0);
-            }
+			0%,
+			100% {
+				transform: scale(0);
+			}
 
-            50% {
-                transform: scale(1);
-            }
-        }
+			50% {
+				transform: scale(1);
+			}
+		}
 
-        .loaded_hiding .preloader {
-            transition: 0.3s opacity;
-            opacity: 0;
-        }
+		.loaded_hiding .preloader {
+			transition: 0.3s opacity;
+			opacity: 0;
+		}
 
-        .loaded {
-            display: none;
-        }
-    </style>
-    <script type="text/javascript">
-        document.write("<base href='" + document.location.href + "' />");
-    </script>
-    <title>Telegram</title>
+		.loaded {
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		document.write("<base href='" + document.location.href + "' />");
+	</script>
+	<title>Telegram</title>
 </head>
 
 <body class="text-center d-flex flex-column">
-    <div class="header">
-        Telegram
-    </div>
-    <div class="container d-flex justify-content-center align-items-center flex-column flex-grow-1">
-        <div id="open-link" class="w-100 justify-content-center">
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <div>
-                        <!-- <object style="margin-bottom: 5%;" class="round" width="150px" data="/photo/icrypto_logo.jpg" type="image/jpeg">
+	<div class="header">
+		Telegram
+	</div>
+	<div class="container d-flex justify-content-center align-items-center flex-column flex-grow-1">
+		<div id="open-link" class="w-100 justify-content-center">
+			<div class="row justify-content-center">
+				<div class="col-md-" style="padding: 50px 20px;">
+					<div>
+						<!-- <object style="margin-bottom: 5%;" class="round" width="150px" data="/photo/icrypto_logo.jpg" type="image/jpeg">
                             <img src="/telegram-open-page/photo/icrypto_logo.jpg" width="150px" style="margin-bottom: 5%;" class="round">
                           </object> -->
-                        <img src="./photo/icrypto_bot.jpg" width="150px" style="margin-bottom: 5%;" class="round">
+						<img src="./photo/icrypto_logo.jpg" width="150px" style="margin-bottom: 5%;" class="round">
 
-                        <h5 style="color:black;margin-bottom: 20px;">🔎 First Crypto AI Lab</h5>
+						<h5 style="color:black;margin-bottom: 12px;">iCryptoAI | Smart Signals</h5>
+						<p style="color: grey;">🔎 First Crypto AI Lab</p>
 						<p style="color:black;margin-bottom: 0;">- Smart Signals, Gem Hunter</p>
 						<p style="color:black">- Crypto AI Assistant</p>
 
-                        <!-- <p style="color: grey;">🚀 @icryptoaibot</p> -->
-						  <a href="https://t.me/icryptoaibot" style="position: relative;"><img style="position: absolute;left: -28px" src="./photo/telegram.png" /> https://t.me/icryptoaibot</a><br />
-						  <a href="https://twitter.com/icryptoai" style="position: relative;"><img style="position: absolute;left: -28px" src="./photo/twitter.png" /> https://twitter.com/icryptoai</a>
+						<!-- <p style="color: grey;">🚀 @icryptoaibot</p> -->
+						<a href="https://t.me/icryptoaibot" style="position: relative;"><img
+								style="position: absolute;left: -28px" src="./photo/telegram.png" />
+							https://t.me/icryptoaibot</a><br />
+						<a href="https://twitter.com/icryptoai" style="position: relative;"><img
+								style="position: absolute;left: -28px" src="./photo/twitter.png" />
+							https://twitter.com/icryptoai</a>
 
-<!-- 🐦 https://twitter.com/icryptoai -->
+						<!-- 🐦 https://twitter.com/icryptoai -->
 
-                        <p style="color:black;margin-top: 20px;margin-bottom: 20%;">🔔 Alert Whale, Smart Money, Insider on-chain actions
-                            impacting token prices.<br />
-                            🔔 Explain what it could mean with indicators that can help traders analyze signals.</p>
-                    </div>
-                    <a href="https://t.me/icryptoaibot" id="link" class="btn btn-lg btn-primary btn-block" ;
-                        style="background-color: #5dc390 !important;">
-                        Open in Telegram
-                    </a>
-                    <!-- <a id="link1" class="btn btn-lg btn-dl btn-block button-link"
+						<p style="color:black;margin-top: 20px;margin-bottom: 12%;max-width: 400px;">🔔 Alert Whale, Smart Money, Insider
+							on-chain actions
+							impacting token prices.<br />
+							🔔 Explain what it could mean with indicators that can help traders analyze signals.</p>
+					</div>
+					<a href="https://t.me/icryptoaibot" id="link" class="btn btn-lg btn-primary btn-block" ; style="background-color: #057eff !important;max-width: 300px;
+						margin-left: auto;
+						margin-right: auto;">
+						Join Telegram
+					</a>
+					<!-- <a id="link1" class="btn btn-lg btn-dl btn-block button-link"
 						style="background: grey;border-color: grey" href="https://telegram.org/dl">
 						Don't have Telegram	yet? Try it now! 
 						<i class="icon-chevron-right"></i>
 					</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-    <footer style="padding-top: 50px">
-        <div class="text-center bg-dark py-4">
-            <small class="text-secondary"> © 2023 1Fox | <a href="./term_and_privacy/priavcy.html">Privacy Policy</a> |
-                <a href="./term_and_privacy/term.html">Terms & Conditions</a></small class="text-secondary">
-            </small>
-        </div>
-    </footer>
+	<footer style="padding-top: 50px">
+		<div class="text-center bg-dark py-4">
+			<small class="text-secondary"> © 2023 1Fox | <a href="./term_and_privacy/priavcy.html">Privacy Policy</a> |
+				<a href="./term_and_privacy/term.html">Terms & Conditions</a></small class="text-secondary">
+			</small>
+		</div>
+	</footer>
 </body>
 
 
 <div class="preloader loaded">
-    <div class="preloader__row">
-        <div class="preloader__item"></div>
-        <div class="preloader__item"></div>
-    </div>
+	<div class="preloader__row">
+		<div class="preloader__item"></div>
+		<div class="preloader__item"></div>
+	</div>
 </div>
 
 </html>
